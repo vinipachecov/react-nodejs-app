@@ -1,5 +1,6 @@
 // SurveyNew shows survey form and surveyformReview
 import React, { Component } from 'react';
+import { reduxForm } from 'redux-form';
 import { connect } from 'react-redux';
 import SurveyForm from './SurveyForm';
 import SurveyFormReview from './surveyFormReview';
@@ -32,10 +33,6 @@ export class SurveyNew  extends Component {
   };
 };
 
-const mapStateToProps = (state) => ({
-  
-})
-
-const mapDispatchToProps = {
-};
-export default connect(mapStateToProps, mapDispatchToProps)(SurveyNew);
+export default reduxForm({
+  form: 'surveyForm'
+})(SurveyNew);
