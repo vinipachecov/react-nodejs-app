@@ -10,6 +10,10 @@ This is a simple project of a feedback email system that can create surveys for 
 # Purpose 
 The idea is to explore the React framework combining the routing of the Express.js Framework to have a more holistic view of the web development with both techonologies. Axios Library is very usefull to send requests that the client receives and need some help of backend server(Express).
 
+##  Create Surveys
+With this project you can create surveys and send them to users and check the results in the dashboard(/dashboard).
+![image](https://user-images.githubusercontent.com/2838834/39961713-a2bc1566-5612-11e8-8536-605a0436b87d.png)
+
 # Running
 
 ## Google API
@@ -25,6 +29,9 @@ https://mlab.com
 
 ## Stripe
 The payment system I used in this project is stripe. You will need to create an account and do the same steps as you did before for Google API. You will have to add both keys provided for stripe and add it to the dev.js and also change the .env.development REACT_APP_STRIPE_KEY client constant with the secret key provided by stripe.
+
+
+
 
 ## Commands
 After that you can actually run the program with the following command that will start both server and client:
